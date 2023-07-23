@@ -4,30 +4,43 @@ package rocks.zipcode.io;
  * @author leon on 30/01/2019.
  */
 public class Item {
+    private Long id;
+    private String name;
+    private Double price;
     public Item() {
-    }
 
-    public Item(Long id, String name, Double price) {
-    }
-
-    public String getName() {
-        return null;
-    }
-
-    public void setName(String name) {
     }
 
     public Long getId() {
-        return null;
+        return id;
     }
 
     public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Double getPrice() {
-        return null;
+        return price;
     }
 
     public void setPrice(Double price) {
+        this.price = price;
     }
+
+    public Item(Long id, String name, Double price) {
+        this.price=price;
+        this.name=name;
+        this.id=id;
+
+    }
+
+
 }
