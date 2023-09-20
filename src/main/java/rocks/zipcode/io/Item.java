@@ -8,7 +8,9 @@ public class Item {
     private String name;
     private Double price;
     public Item() {
-
+        this.id=0L;
+        this.name="";
+    this.price=0.01;
     }
 
     public Long getId() {
